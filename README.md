@@ -24,4 +24,7 @@ shows how to set mimetype and accept headers; Credit: Dharman, agm1984
 3. https://github.com/abramhindle/CMPUT404-AJAX-Slides
 Abram Hindle's Ajax slides
 
+4. https://stackoverflow.com/questions/3038901/how-to-get-the-response-of-xmlhttprequest
+get response from XMLHttpRequest; credit: BalusC
+
 
