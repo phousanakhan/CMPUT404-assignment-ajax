@@ -141,7 +141,8 @@
             world[entity] = data;
             drawNextFrame(); // (but should we?)
             //XXX: Send a XHTML Request that updates the entity you just  modified!
-            sendJSONXMLHTTPRequest("/entity/" + entity, data, function () { });
+            url = "http://" + host + "/entity/" + entity;
+            sendJSONXMLHTTPRequest(url, data, function () { });
 
 
         }
@@ -276,7 +277,7 @@
             //Get the world from the webservice using a XMLHTTPRequest
             //https://stackoverflow.com/questions/3038901/how-to-get-the-response-of-xmlhttprequest
             //get response from XMLHttpRequest; credit: BalusC
-            var url_path = "/world";
+            var url_path = "http://" + host + "/world";
             var objects = {};
             function callback(data) {
                 world = data;
